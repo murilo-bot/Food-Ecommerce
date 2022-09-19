@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/painel-style.css">
+    <title>Kenzie Food - Admin Panel</title>
+</head>
+<body>
+    <form id="postForm">
+        <h2>create item</h2>
+        <input type="text" name="nome"        placeholder="nome"  min="0"/>
+        <input type="number" name="preco"     placeholder="preco" min="0"/>
+        <input type="text" name="categoria"   placeholder="category" />
+        <input type="text" name="imagem"      placeholder="imagem" />
+        <input type="text" name="descricao"   placeholder="descriçao" />
+
+
+        <button id="postButton">Submit</button>
+    </form>
+
+    <form id="patchForm">
+        <h2>Update item by id</h2>
+        <input id="patchThis" type="number" name="id"        placeholder="id"    min="0" />
+        <input type="text" name="nome"        placeholder="nome" />
+        <input type="number" name="preco"     placeholder="preco" min="0" />
+        <input type="text" name="categoria"   placeholder="category" />
+        <input type="text" name="imagem"      placeholder="imagem" />
+        <input type="text" name="descricao"   placeholder="descriçao" />
+
+
+        <button id="patchButton">Submit</button>
+    </form>
+
+    <form id="deleteForm">
+        <h2>Delete item by id</h2>
+        <input id="deleteInput" type="number" name="id" placeholder="id" min="0" />
+
+        <button id="deleteButton">Submit</button>
+    </form>
+
+    <div id="showProducts">
+        <h2>Show all itens</h2>
+        <button id="showButton">Show</button>
+    </div>
+    
+    <script type="module" src="./src/js/adminPanel.js"></script>
+</body>
+</html>

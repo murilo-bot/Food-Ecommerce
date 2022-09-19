@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Kenzie Food</title>
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.svg" alt="Logo Kenzie Food" />
+
+        <section class="search">
+            <input id="searchInput" type="text" placeholder="Pesquisar por produtos"/>
+            
+            <span id="searchButton">
+                <img src="assets/images/search-icon.svg" alt="Search button" />
+            </span>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <ul class="tag-container" id="tagContainer">
+                <li class="tag tag-one" id="todos" >
+                    <span >Todos</span>
+                </li>
+
+                <li id="panificadora" class="tag tag-two">
+                    <img   src="assets/images/bread-icon.svg" alt="">
+                    <span >Panificadora</span> 
+                </li>
+                
+                <li class="tag tag-three" id="frutas"> 
+                    <img src="assets/images/fruits-icon.svg" alt="">
+                    <span>Frutas</span>
+                </li>
+
+                <li class="tag tag-four" id="bebidas">
+                    <img src="assets/images/wine-icon.svg" alt="">
+                    <span>Bebidas</span>
+                </li>
+            </ul>
+
+            <ul class="food-card-container" id="foodCardContainer">
+            </ul>
+        </section>
+
+
+        <section class="cart-container">
+
+            <div class="topCart">
+                <img src="assets/images/title-cart-icon.svg" alt="Icon Cart"/>
+                <span>Carrinho</span>
+            </div> 
+
+            <div class="no-content-cart" id="noContentCart">
+                <img src="assets/images/no-item-cart-icon.svg" alt="">
+                <h3>Ops!</h3>
+                <small>Por enquanto não temos produtos no carrinho</small>
+            </div>
+
+            <div class="inCart not-visible" id="cartList">
+                <ul id="cartContainer">
+                </ul>
+            </div>
+
+            <div class="not-visible" id="cartInfo">
+                <span id="quantity" class="quantity">
+                </span>
+
+                <span id="amountPrice" class="amount-price">
+                </span>
+            </div>
+
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <script type="module" src="./src/js/index.js"></script>
+</body>
+</html>

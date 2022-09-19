@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #FF2253;
+    --color-primary-50: #FFE9EE;
+    --color-secondary:  #4ACA94;
+    --color-secondary-50:  #E4F7EF;
+
+    --product-1: #EEF6FF;
+    --product-2: #FFF7F4;
+    --product-3: #FFE4EA;
+    --product-3: #F3EEF5;
+
+    --grey-4: #212529;
+    --grey-3: #868E96;
+    --grey-2: #E9ECEF;
+    --grey-1: #F8F9FA;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    margin: 17px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    background: #F8F9FA;
+    color: #868E96;
+    
+    height: 50px;
+    width: 100%;
+    
+    border: 2px solid #F8F9FA;
+    border-radius: 33px;
+    
+    box-sizing: border-box;
+}
+
+.search span{
+    cursor: pointer;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+
+    background: #FFE9EE;
+    border: none;
+
+    position: absolute;
+
+    left: calc((100%) + -70px);
+}
+
+.tag-container{
+    display: flex;
+    overflow-x: auto;
+}
+
+.tag{
+    display: flex;
+    cursor: pointer;
+
+    border: 2px solid transparent; 
+    border-radius: 30px;
+
+    margin: 0 15px;
+    padding: 10px 15px;
+    height: 20px;
+}
+
+.tag-one{
+    background-color: var(--product-1);
+}
+.tag-two{
+    background-color: var(--product-2);
+}
+.tag-three{
+    background-color: var(--color-primary-50);
+}
+.tag-four{
+    background-color: var(--product-3);
+}
+.tag-food-card{
+    background-color: var(--color-primary-50);
+    margin-top: -30px;
+}
+
+.tag img {
+    margin-right: 15px;
+}
+
+.food-card-container{
+    display: flex;
+
+    padding: 20px;
+    
+    overflow-x: auto;
+}
+
+.food-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    min-width: 300px;
+    max-width: 300px;
+    margin-right: 23px;
+}
+
+.food-img-container{
+    width: 100%;
+    padding: 5px;
+    background-color: var(--color-primary-50) ;
+    border-radius: 10px;
+}
+
+.food-card h3{
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+
+    margin: 15px 0;
+}
+.food-card p{
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.food-price-span{
+    color: var(--grey-4);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.shop-button{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+
+    background-color: var(--color-secondary-50);
+    width: 35px;
+    height: 35px;
+}
+
+.buy-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.shop-button img {
+    width: 11px;
+}
+
+
+.food-img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 15px;
+
+    border-radius: 15px;
+    /* max-width: 400px; */
+}
+
+.cart-container .topCart{
+    background: var(--primary-color);
+    color: white;
+
+    padding: 18px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cart-container .no-content-cart{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    
+    background-color: var(--grey-1);
+    color: var(--grey-3);
+}
+
+.cart-container .no-content-cart h3{
+   margin:-2px 24px 17px 26px;
+}
+
+.cart-container .no-content-cart small{
+    text-align: center;
+    margin: 0 20%;
+}
+
+.first-upper-case{
+    text-transform: capitalize;
+}
+
+.not-visible{
+    display:hidden;
+}
+
+
+.imgCart{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    margin:-82px 0px 0px -59px;
+}
+
+.tittleCart{
+    width: 176px;
+    height: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    /* margin: 0px 0px 0px 0px; */
+}
+
+.priceCart{
+    width: 50px;
+    height: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: #212529;
+    margin: 0px 0px 0px 4px;
+}
+
+.categoriaCart{
+    width: 67px;
+    height: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    color: #868E96;
+    margin: 0px 0px 0px 25px;
+}
+
+.btnTrashCart{
+    width: 9px;
+    height: 12px;
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 11px;
+    color: #868E96;
+    margin: 0px 0px 0px 185px;
+}
+
+@media(min-width:1024px){
+    header{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    
+
+    .search input {
+        margin: 15px 0px 0px 994px;
+    }
+
+
+    main {
+        display: flex;
+    }
+
+
+    .cart-container{
+        width: 319px;
+        margin: 64px 0px 0px 41px;
+    }
+
+
+    
+}
